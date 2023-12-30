@@ -72,7 +72,7 @@ async def login(request: Request, user_credentials:UserLogin, db: Session = Depe
     return {
         'status_code':status.HTTP_200_OK,
         'access_token': access_token,
-        'token_type': 'bearer',
+        'token_type': 'Bearer',
         'username':user.username,
         'is_verified':user.is_verified,
         'email':user.email,
