@@ -1,4 +1,4 @@
-# BotBlogR-BE
+# DataInvestigo-BE
 
 Brief project description.
 
