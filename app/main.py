@@ -5,7 +5,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
-from app.routers import auth
+from app.routers import auth,domain
 from dotenv import load_dotenv
 from fastapi.templating import Jinja2Templates
 
@@ -27,4 +27,6 @@ app.add_middleware(
 
 # Include your routers
 app.include_router(auth.router, prefix="/auth", tags=["auth"])
+app.include_router(domain.router,prefix='/domain',tags=['domain'])
+
 
