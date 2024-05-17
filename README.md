@@ -1,4 +1,4 @@
-# DataInvestigo-BE
+# D-Traco-BE
 
 Brief project description.
 

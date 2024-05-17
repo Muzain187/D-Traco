@@ -1,3 +1,4 @@
+# app/models/user.py
 from sqlalchemy import Column, Integer, String,Boolean,TIMESTAMP
 from .database import Base, engine
 from sqlalchemy.sql.expression import text
